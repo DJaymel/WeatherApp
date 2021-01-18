@@ -13,6 +13,11 @@
 		C4C8F20725B4C699000818DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C8F20625B4C699000818DB /* Preview Assets.xcassets */; };
 		C4C8F21225B4C699000818DB /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8F21125B4C699000818DB /* WeatherAppTests.swift */; };
 		C4C8F21D25B4C699000818DB /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8F21C25B4C699000818DB /* WeatherAppUITests.swift */; };
+		C4C8F22F25B4CB15000818DB /* WebServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8F22E25B4CB15000818DB /* WebServiceController.swift */; };
+		C4C8F23725B4CD89000818DB /* OpenWeatherMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8F23625B4CD89000818DB /* OpenWeatherMapController.swift */; };
+		C4C8F23C25B4D0B9000818DB /* OpenWeatherMapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8F23B25B4D0B9000818DB /* OpenWeatherMapData.swift */; };
+		C4C8F24625B4D479000818DB /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8F24525B4D479000818DB /* WeatherViewModel.swift */; };
+		C4C8F25425B4EEA7000818DB /* WeatherStackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8F25325B4EEA7000818DB /* WeatherStackController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		C4C8F21825B4C699000818DB /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C8F21C25B4C699000818DB /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		C4C8F21E25B4C699000818DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C8F22E25B4CB15000818DB /* WebServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceController.swift; sourceTree = "<group>"; };
+		C4C8F23625B4CD89000818DB /* OpenWeatherMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapController.swift; sourceTree = "<group>"; };
+		C4C8F23B25B4D0B9000818DB /* OpenWeatherMapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapData.swift; sourceTree = "<group>"; };
+		C4C8F24525B4D479000818DB /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		C4C8F25325B4EEA7000818DB /* WeatherStackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStackController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,8 @@
 		C4C8F1FE25B4C698000818DB /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				C4C8F24425B4D46A000818DB /* ViewModel */,
+				C4C8F22D25B4CAA1000818DB /* Model */,
 				C4C8F1FF25B4C698000818DB /* WeatherAppApp.swift */,
 				C4C8F20125B4C698000818DB /* ContentView.swift */,
 				C4C8F20325B4C699000818DB /* Assets.xcassets */,
@@ -128,6 +140,33 @@
 				C4C8F21E25B4C699000818DB /* Info.plist */,
 			);
 			path = WeatherAppUITests;
+			sourceTree = "<group>";
+		};
+		C4C8F22D25B4CAA1000818DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4C8F24025B4D0BD000818DB /* JSONMappers */,
+				C4C8F22E25B4CB15000818DB /* WebServiceController.swift */,
+				C4C8F25325B4EEA7000818DB /* WeatherStackController.swift */,
+				C4C8F23625B4CD89000818DB /* OpenWeatherMapController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4C8F24025B4D0BD000818DB /* JSONMappers */ = {
+			isa = PBXGroup;
+			children = (
+				C4C8F23B25B4D0B9000818DB /* OpenWeatherMapData.swift */,
+			);
+			path = JSONMappers;
+			sourceTree = "<group>";
+		};
+		C4C8F24425B4D46A000818DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C4C8F24525B4D479000818DB /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4C8F22F25B4CB15000818DB /* WebServiceController.swift in Sources */,
+				C4C8F24625B4D479000818DB /* WeatherViewModel.swift in Sources */,
+				C4C8F23725B4CD89000818DB /* OpenWeatherMapController.swift in Sources */,
 				C4C8F20225B4C698000818DB /* ContentView.swift in Sources */,
 				C4C8F20025B4C698000818DB /* WeatherAppApp.swift in Sources */,
+				C4C8F23C25B4D0B9000818DB /* OpenWeatherMapData.swift in Sources */,
+				C4C8F25425B4EEA7000818DB /* WeatherStackController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
